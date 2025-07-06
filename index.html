@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header-line">
+      <hr><div class="header">YAY! It's BOGO</div><hr>
+    </div>
+
+    <!-- Option 1 -->
+    <div class="option" data-units="1" onclick="selectOption(this, 10.00)">
+      <div class="radio-btn"></div>
+      <div>
+        <div class="option-content">
+          <span class="unit"><strong>1 Unit</strong></span>
+          <span class="discount-tag">10% Off</span>
+        </div>
+        <div class="desc">Standard Price</div>
+      </div>
+      <div class="price">
+        <span class="main-price">$10.00 USD</span>
+        <span class="strikethrough">$24.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="option" data-units="2" onclick="selectOption(this, 18.00)">
+      <div class="most-popular">MOST POPULAR</div>
+      <div class="radio-btn"></div>
+      <div>
+        <div class="option-content">
+          <span class="unit"><strong>2 Unit</strong></span>
+          <span class="discount-tag">20% Off</span>
+        </div>
+        <div class="selectors">
+          <div class="row">
+            <label>#1</label>
+            <select name="size1">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select name="color1">
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="row">
+            <label>#2</label>
+            <select name="size2">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select name="color2">
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <span class="main-price">$18.00 USD</span>
+        <span class="strikethrough">$24.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="option" data-units="3" onclick="selectOption(this, 24.00)">
+      <div class="radio-btn"></div>
+      <div>
+        <div class="option-content">
+          <span class="unit"><strong>3 Unit</strong></span>
+          <span class="discount-tag">30% Off</span>
+        </div>
+      </div>
+      <div class="price">
+        <span class="main-price">$24.00 USD</span>
+        <span class="strikethrough">$24.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row" style="justify-content: space-between; margin-top: 10px;">
+      <div class="free-delivery">Free Delivery</div>
+      <div class="total">Total : <span id="total-price">$18.00 USD</span></div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+    <div class="powered">@ Powered by Pumper</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
